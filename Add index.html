@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eventbrite Widget Test</title>
+  <style>
+    body {
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    #eventbrite-widget-container-20059784394 {
+      max-width: 900px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="eventbrite-widget-container-20059784394"></div>
+
+  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+  <script type="text/javascript">
+    window.EBWidgets.createWidget({
+      widgetType: "event_list",
+      organizationId: "20059784394",
+      iframeContainerId: "eventbrite-widget-container-20059784394"
+    });
+  </script>
+</body>
+</html>
